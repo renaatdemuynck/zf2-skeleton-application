@@ -1,0 +1,5 @@
+syntax: glob
+*.rej
+*.orig
+syntax: regexp
+(^|/)\.(?!ht)
