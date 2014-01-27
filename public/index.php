@@ -12,16 +12,7 @@ Zend\Loader\AutoloaderFactory::factory(array(
 ));
 
 // Configure the application
-$config = array(
-    'modules' => array(
-        'Application'
-    ),
-    'module_listener_options' => array(
-        'module_paths' => array(
-            './module'
-        )
-    )
-);
+$config = include 'config/application.config.php';
 
 // Run the application!
 Zend\Mvc\Application::init($config)->run();
