@@ -1,0 +1,15 @@
+{
+    "name": "renaatdemuynck/zf2-skeleton-application",
+    "description": "Zend Framework 2 Skeleton Application",
+    "authors": [
+        {
+            "name": "Renaat De Muynck",
+            "email": "renaat.demuynck@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "zendframework/zendframework": "~2"
+    }
+}
