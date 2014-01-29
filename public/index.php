@@ -9,6 +9,11 @@ require_once "vendor/autoload.php";
 // Get the current environment (development, testing, staging, production, ...)
 $env = strtolower(getenv('APPLICATION_ENV'));
 
+// Assume production if environment not defined
+if (empty($env)) {
+    $env = 'production';
+}
+
 // Get the default config file
 $config = require 'config/application.config.php';
 
