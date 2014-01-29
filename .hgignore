@@ -1,6 +1,8 @@
 syntax: glob
 *.rej
 *.orig
+
 syntax: regexp
 (^|/)\.(?!ht)
 ^vendor/
+^data/cache/
