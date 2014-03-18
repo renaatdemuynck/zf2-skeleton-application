@@ -8,7 +8,7 @@ return array(
     ),
     'module_listener_options' => array(
         'config_glob_paths' => array(
-            'config/autoload/{,*.}{global,' . APP_ENV . ',local}.php'
+            'config/autoload/{,*.}{global,' . @APP_ENV . ',local}.php'
         ),
         'module_paths' => array(
             './module',
