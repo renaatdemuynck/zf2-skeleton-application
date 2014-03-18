@@ -11,6 +11,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "zendframework/zendframework": "~2"
+        "zendframework/zendframework": "~2",
+        "doctrine/doctrine-module": "*",
+        "doctrine/doctrine-orm-module": "*"
     }
 }
