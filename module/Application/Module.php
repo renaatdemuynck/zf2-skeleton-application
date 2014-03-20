@@ -27,4 +27,13 @@ class Module
         );
     }
 
+    public function getServiceConfig()
+    {
+        return array(
+            'aliases' => array(
+                'entitymanager' => 'Doctrine\ORM\EntityManager'
+            )
+        );
+    }
+
 }
