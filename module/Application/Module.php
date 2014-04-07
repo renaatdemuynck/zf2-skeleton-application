@@ -1,8 +1,18 @@
 <?php
 namespace Application;
 
+use Zend\Mvc\MvcEvent;
+use Locale;
+
 class Module
 {
+
+    public function onBootstrap(MvcEvent $e)
+    {
+        $locale = Locale::getPrimaryLanguage(Locale::acceptFromHttp($_SERVER['HTTP_ACCEPT_LANGUAGE']));
+        $translator = $e->getApplication()->getServiceManager()->get('translator');
+        $translator->setLocale($locale);
+    }
 
     public function getConfig()
     {
@@ -31,6 +41,7 @@ class Module
     {
         return array(
             'aliases' => array(
+                'translator' => 'MvcTranslator',
                 'entitymanager' => 'Doctrine\ORM\EntityManager'
             )
         );
