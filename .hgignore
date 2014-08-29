@@ -1,6 +1,9 @@
 syntax: glob
 *.rej
 *.orig
+*.zip
+*.bak
+composer.lock
 behat.yml
 
 syntax: regexp
@@ -8,3 +11,4 @@ syntax: regexp
 ^vendor/
 ^bin/
 ^data/cache/
+/(?:.+\.)?local.php$
