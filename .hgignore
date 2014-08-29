@@ -5,4 +5,5 @@ syntax: glob
 syntax: regexp
 (^|/)\.(?!ht)
 ^vendor/
+^bin/
 ^data/cache/
