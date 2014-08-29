@@ -1,6 +1,7 @@
 {
     "name": "renaatdemuynck/zf2-skeleton-application",
     "description": "Zend Framework 2 Skeleton Application",
+    "license": "MIT",
     "authors": [
         {
             "name": "Renaat De Muynck",
