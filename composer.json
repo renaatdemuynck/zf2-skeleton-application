@@ -18,6 +18,10 @@
         "doctrine/doctrine-module": "~0.7",
         "doctrine/doctrine-orm-module": "~0.7"
     },
+    "require-dev": {
+        "behat/behat": "*",
+        "mvlabs/zf2behat-extension": "dev-master"
+    },
     "config": {
         "bin-dir": "bin/"
     }
