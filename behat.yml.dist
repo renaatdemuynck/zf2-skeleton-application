@@ -1,0 +1,4 @@
+default:
+    extensions:
+        MvLabs\Zf2Extension\Zf2Extension:
+        
