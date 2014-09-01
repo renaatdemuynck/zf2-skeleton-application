@@ -1,0 +1,1 @@
+[ ![Codeship Status for renaatdemuynck/ZF2 Skeleton Application](https://codeship.io/projects/500037a0-13e1-0132-493d-5ed481610536/status)](https://codeship.io/projects/33366)
