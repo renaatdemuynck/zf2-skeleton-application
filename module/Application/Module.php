@@ -9,7 +9,8 @@ class Module
 
     public function onBootstrap(MvcEvent $e)
     {
-        $locale = Locale::getPrimaryLanguage(Locale::acceptFromHttp($_SERVER['HTTP_ACCEPT_LANGUAGE']));
+        $lang = isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) ? $_SERVER['HTTP_ACCEPT_LANGUAGE'] : 'en';
+        $locale = Locale::getPrimaryLanguage(Locale::acceptFromHttp($lang));
         $translator = $e->getApplication()->getServiceManager()->get('translator');
         $translator->setLocale($locale);
     }
